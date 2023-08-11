@@ -84,7 +84,8 @@
                         </div>
                     </div>
                     <div class="row" style="margin-left: 1px;">
-                        <button class="btn btn-outline-primary" type="button" onclick="downloadPDF()" ><i class="fas fa-file-pdf" style="color: #ffffff;"></i> Download CV</button>
+                        
+                        <a href="\Assets\My CV-aug.pdf" class="btn btn-outline-primary" download="Mohamed-Hossam-cv.pdf"><i class="fas fa-file-pdf" style="color: #ffffff;"></i> Download CV</a>
                     </div>
                 </div>
             </div>
@@ -134,7 +135,7 @@
         }
 
         function downloadPDF() {
-            var url = "Lecture8\img\My CV-aug.pdf";
+            var url = "\Assets\My CV-aug.pdf";
             var filename = "Mohamed-Hossam-cv.pdf";
 
             var anchor = document.createElement("a");
