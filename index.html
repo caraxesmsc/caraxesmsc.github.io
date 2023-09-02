@@ -69,7 +69,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-9 mb-6 mb-sm-2" style="align-self: center;">
-                    <h3>Hello, I'm<b style="color: rgb(255, 255, 255);"> Mohamed Hossam Abdelalim</b></h3>
+                    <h3 class="lightPurpleTEXT">Hello, I'm<b style="color: #ffffff;"> Mohamed Hossam Abdelalim</b></h3>
                 </div>
                 <div class="col-sm-3 mb-3 mb-sm-2">
                     <img src="img/cv photo (Small) (nobg).png" class="rounded" alt="my photo"
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm">
+        <div class="col-sm lightPurpleTEXT">
             <p style="text-align: justify;">A Software Engineering student at Ain Shams University, I am deeply
                 passionate about the world of coding and its endless possibilities. Beyond technology, I find joy in
                 staying active with invigorating gym sessions and unwinding through gaming. My ambition drives me to aim
@@ -88,34 +88,36 @@
         <div class="row" style="text-align: center;">
             <div class="col-sm-6 mb-3 mb-sm-2">
                 <a href="Assets/contactme.html" target="_blank"
-                    class="card border-secondary mb-3 bg-transparent text-secondary objectHover"
+                    class="card border-secondary mb-3 bg-transparent text-light objectHover"
                     style="text-decoration: none;">
                     <div class="card-body">
                         <h5 class="card-title">2+</h5>
                         <p class="card-text">Years of Experience</p>
+                        <p class="btn text-light border-secondary btnHover" >About Me</p>
                     </div>
                 </a>
             </div>
 
             <div class="col-sm-6 mb-3 mb-sm-2">
                 <a href="Assets/project.html" target="_blank"
-                    class="card border-secondary mb-3 bg-transparent text-secondary objectHover"
+                    class="card border-secondary mb-3 bg-transparent text-light objectHover"
                     style="text-decoration: none;">
                     <div class="card-body">
                         <h5 class="card-title">5+</h5>
                         <p class="card-text">Projects Completed</p>
+                        <p class="btn text-light border-secondary btnHover"  >View Projects</p>
                     </div>
 
                 </a>
             </div>
         </div>
         <div class="row" style="margin-left: 1px;">
-            <a href="\Assets\My CV-aug.pdf" target="_blank" class="btn btn-outline-primary"
+            <a href="\Assets\My CV-aug.pdf" target="_blank" class="btn border-secondary bg-transparent text-light btnHover"
                 download="Mohamed-Hossam-cv.pdf"><i class="fas fa-file-pdf" style="color: #ffffff;"></i> Download CV</a>
         </div>
         <div class="row" style="margin-left: 1px; margin-top: 5px;">
             <a href="https://www.linkedin.com/in/mohamed-hossam-abdelalim-762736221" target="_blank"
-                class="btn btn-outline-primary"><i class="fab fa-linkedin" style="color: #ffffff;"></i> LinkedIn</a>
+                class="btn border-secondary bg-transparent text-light btnHover"><i class="fab fa-linkedin" style="color: #ffffff;"></i> LinkedIn</a>
         </div>
 
     </div>
@@ -137,11 +139,22 @@
 
             $(".objectHover").hover(function () {
                 $(this).removeClass();
-                $(this).addClass("card border-primary text-bg-primary mb-3 shadow-lg  objectHover");
+                $(this).addClass("card purpleTEXT lightPurpleBG mb-3 shadow-lg  objectHover");
             })
             $(".objectHover").mouseleave(function () {
                 $(this).removeClass();
-                $(this).addClass("card border-secondary mb-3 bg-transparent text-secondary objectHover");
+                $(this).addClass("card border-secondary mb-3 bg-transparent text-light objectHover");
+            })
+        }
+        {//first 2 Cards hover
+
+            $(".btnHover").hover(function () {
+                $(this).removeClass();
+                $(this).addClass("btn purpleBG text-light shadow-lg btnHover");
+            })
+            $(".btnHover").mouseleave(function () {
+                $(this).removeClass();
+                $(this).addClass("btn border-secondary bg-transparent text-light btnHover");
             })
         }
         {//picture hover
@@ -535,17 +548,17 @@
                 <div class="row" style="
                 height: 35px;
                 width: 35px;
-                background-color: blue;
+                background-color: #B770A9;
                 border-radius: 50%;
                 display: inline-block;
                 padding-right: 2px;
                 position: relative;">
-                    <i class="fas fa-user-graduate" style="color: #cbdbf6; padding-top: 8px; padding-right: 2px;"></i>
+                    <i class="fas fa-user-graduate" style="color: #ffffff; padding-top: 8px; padding-right: 2px;"></i>
                 </div>
                 <div class="row" style="
                 height: 80px;
                 width: 5px;
-                background-color: blue;
+                background-color: #B770A9;
                 display:inherit;
                 padding-right: 2px;
                 margin-bottom: 30px;
@@ -576,17 +589,17 @@
                 <div class="row" style="
                 height: 35px;
                 width: 35px;
-                background-color: blue;
+                background-color: #B770A9;
                 border-radius: 50%;
                 display: inline-block;
                 padding-right: 2px;
                 position: relative;">
-                    <i class="fas fa-user-graduate" style="color: #cbdbf6; padding-top: 8px; padding-right: 2px;"></i>
+                    <i class="fas fa-user-graduate" style="color: #ffffff; padding-top: 8px; padding-right: 2px;"></i>
                 </div>
                 <div class="row" style="
                 height: 80px;
                 width: 5px;
-                background-color: blue;
+                background-color: #B770A9;
                 display:inherit;
                 padding-right: 2px;
                 margin-bottom: 30px;
@@ -617,12 +630,12 @@
                 <div class="row" style="
                 height: 35px;
                 width: 35px;
-                background-color: blue;
+                background-color: #B770A9;
                 border-radius: 50%;
                 display: inline-block;
                 padding-right: 2px;
                 position: relative;">
-                    <i class="fas fa-user-graduate" style="color: #cbdbf6; padding-top: 8px; padding-right: 2px;"></i>
+                    <i class="fas fa-user-graduate" style="color: #ffffff; padding-top: 8px; padding-right: 2px;"></i>
                 </div>
 
 
